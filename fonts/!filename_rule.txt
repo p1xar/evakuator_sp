@@ -1,0 +1,10 @@
+Filename template:
+	{fontfamily}_{fontstyle}.*
+
+Example:
+	arial_regular.*
+	arial_bold.*
+	arial_italic.*
+
+ID in SVG example:
+	#arialregular
