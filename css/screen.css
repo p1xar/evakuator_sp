@@ -1288,8 +1288,6 @@ body {
     text-align: center;
 }
 .block__title.stripe {
-    margin-left: -70px;
-    margin-right: -70px;
     background: #f2f3f4;
     padding: 20px 0;
 }
@@ -1363,11 +1361,6 @@ body {
     margin-bottom: 65px;
 }
 
-@media screen and (min-width: 561px) {
-    .serviceShell {
-        width: 561px;
-    }
-}
 .blockList.vertical > .blockList__item:first-child {
     margin-top: 0;
 }
@@ -1601,22 +1594,13 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .logoTop__phone, .headerButtons__button--call {
-        margin-bottom: 2em;
-    }
 
     .logoTop__phone .number, .spec__list.big {
         font-size: 1.3em;
     }
 
-    .headerButtons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .block__title {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .zoneCols {
         text-align: initial;
@@ -1653,6 +1637,27 @@ body {
     .block.zone {
         background: url(../img/bg_map.jpg) 100% 100%;
     }
+    .blockList {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .blockList.horizontal > .blockList__item {
+        margin-left: 0px;
+    }
+
+    .icoPos_top.icoSize_128 {
+        margin-top: 140px;
+    }
+    .headerButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoTop__phone, .headerButtons__button--call {
+        margin-bottom: 2em;
+    }
 }
 
 @media screen and (min-width: 1180px) {
@@ -1664,6 +1669,13 @@ body {
     }
     .headerButtons__button--call {
         margin-right: 25px;
+    }
+    .serviceShell {
+        width: 561px;
+    }   
+    .block__title.stripe {
+        margin-left: -70px;
+        margin-right: -70px;
     }
 }
 
