@@ -1125,7 +1125,7 @@ body {
     text-align: left;
 }
 
-@media screen and (min-width: 1115px) {
+@media screen and (min-width: 1280px) {
     .contentWrapper {
         width: 1115px;
     }   
@@ -1186,6 +1186,7 @@ body {
 .pageHeader .contentWrapper {
     padding-top: 50px;
 }
+
 .logoTop__lnk,
 .logoTop__phone {
     display: inline-block;
@@ -1203,7 +1204,7 @@ body {
     vertical-align: middle;
     color: #fff;
     text-shadow: 3px 3px 5px #514744;
-    font-size: 1.55em;
+    font-size: 1em;
     text-transform: uppercase;
     margin: 0;
     font-family: "roboto";
@@ -1215,7 +1216,7 @@ body {
     font-family: "roboto";
     color: #fa5a18;
     text-shadow: 1px 1px 5px #fff0e8;
-    font-size: 1.99em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -1600,10 +1601,6 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .logoTop__name {
-        font-size: 1em;
-        margin-bottom: 1em;
-    }
     .logoTop__phone, .headerButtons__button--call {
         margin-bottom: 2em;
     }
@@ -1617,4 +1614,59 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .block__title {
+        font-size: 2.5em;
+    }
+    .zoneCols {
+        text-align: initial;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .zoneCols__list {
+        width: 232px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .block.zone {
+        height: 540px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1179px) {
+    .block.zone {
+        height: 440px;
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    .logoTop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logoTop__lnk, .logoTop__phone {
+        margin-bottom: 2em;
+    }
+    .block.zone {
+        background: url(../img/bg_map.jpg) 100% 100%;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .logoTop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerButtons__button--call {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    
 }
