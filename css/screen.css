@@ -1214,10 +1214,11 @@ body {
 }
 .logoTop__phone .number {
     font-family: "roboto";
-    color: #fa5a18;
-    text-shadow: 1px 1px 5px #fff0e8;
+    text-shadow: 1px 1px 2px #514744;
+    color: #fff;
     font-size: 1.5em;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .headerButtons {
@@ -1231,6 +1232,10 @@ body {
     color: #fff;
     width: 120px;
     text-align: center;
+}
+
+.headerButtons__button a:hover {
+    color: #e8e5e5;
 }
 
 .headerButtons__button--call {
@@ -1391,6 +1396,10 @@ body {
     padding-bottom: 85px;
 }
 
+.overflow-table {
+    overflow: auto;
+}
+
 @media screen and (min-width: 1256px) {
     .block.price {
         width: 1256px;
@@ -1407,6 +1416,7 @@ body {
 .priceTbl {
     font-family: "roboto";
     position: relative;
+    width: 611px;
 }
 .priceTbl tr {
     position: relative;
@@ -1661,10 +1671,19 @@ body {
     .serviceShell {
         padding: 20px;
     }
+    .blockList.vertical .blockList__item .blockList__itemTitle {
+        font-size: 1.2em;
+    }
+    .block__content p {
+        margin-bottom: 2em;
+    }
+    .footerBtm__left, .footerBtm__right {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 556px) {
-    .icoPos_lft.icoSize_36:before {
+@media screen and (max-width: 468px) {
+    .blockList.vertical .icoPos_lft.icoSize_36:before {
         margin-top: 0px;
     }
 }
