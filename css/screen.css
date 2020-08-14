@@ -1221,6 +1221,11 @@ body {
     text-decoration: underline;
 }
 
+.logoTop__phone .number a {
+    color: #fff;
+}
+
+
 .headerButtons {
     display: flex;
 }
@@ -1229,12 +1234,8 @@ body {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 8px;
-    color: #fff;
     width: 120px;
     text-align: center;
-}
-
-.headerButtons__button a:hover {
     color: #e8e5e5;
 }
 
